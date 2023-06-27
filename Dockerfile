@@ -3,7 +3,7 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["ConsoleApp12/ConsoleApp15.csproj", "ConsoleApp15/"]
+COPY ["ConsoleApp15/ConsoleApp15.csproj", "ConsoleApp15/"]
 RUN dotnet restore "ConsoleApp15/ConsoleApp15.csproj"
 COPY . .
 WORKDIR "/src/ConsoleApp15"
